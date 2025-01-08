@@ -2,14 +2,16 @@ import { getProducts } from "../../data/data.js";
 import { useState, useEffect } from "react";
 import ItemList from "./ItemList.jsx";
 import '../ItemListContainer/itemListContainer.scss'
+import { Link } from "react-router-dom";
 
-const ItemListContainer = ({ }) => {
+const ItemListContainer = ({ limit }) => {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
         getProducts()
         .then((data)=> {
-            setProducts(data);        
+            const slicedProducts = limit ? data.slice(0, limit) : data; 
+                setProducts(slicedProducts);        
         })
         .catch((error)=>{
             console.log(error);
@@ -17,7 +19,7 @@ const ItemListContainer = ({ }) => {
         .finally(()=>{
             console.log('Finalizo');
         })
-    }, [])
+    }, [limit])
 
 
     

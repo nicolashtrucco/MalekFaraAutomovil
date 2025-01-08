@@ -8,6 +8,7 @@ import LogoPorsche from "../../../assets/Prueba-porsche.webp";
 import LogoBmw from "../../../assets/Prueba-Bmw.webp";
 import LogoMercedes from "../../../assets/Prueba-Mercdes.webp";
 import ItemListContainer from "../../ItemListContainer/ItemListContainer";
+import Formulario from "./Formulario";
 
 const Main = () => {
 
@@ -26,7 +27,11 @@ const Main = () => {
          </div>
 
          <div className="main-Products">
-            <ItemListContainer />
+            <ItemListContainer limit={3} />
+         </div>
+
+         <div className="main-Form">
+               <Formulario/>
          </div>
       </>
    );

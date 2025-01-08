@@ -1,0 +1,137 @@
+header {
+    position: fixed; /* Mantiene el navbar fijo en la parte superior */
+    top: 0; /* Lo coloca al inicio de la ventana */
+    left: 0;
+    width: 100%; /* Asegura que el navbar ocupe todo el ancho */
+    z-index: 1000; /* Coloca el navbar por encima de otros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 175px;
+    height: 80px;
+    background-color: #000;
+
+    img {
+        width: 200px;
+        height: auto;
+        margin-top: 9px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        
+
+        a {
+            margin: 0 2rem;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 400;
+            text-transform: uppercase;
+            transition: 0.5s;
+
+            &:hover {
+                color: #b6b6b6;
+            }
+        }
+    }
+
+    .navbar-button {
+        padding: 5px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #FFF;
+        visibility: hidden;
+        opacity: 0;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-buttonContainer {
+        width: 180px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+main {
+    padding-top: 80px; /* Añade un margen superior para evitar superposición del contenido con el navbar */
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 0 75px;
+
+        .navbar-buttonContainer {
+            width: 0px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+
+            .navbar-button {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            background-color: #000;
+            transition: 1s;
+            transform: translateY(-100vh);
+            flex-direction: column;
+
+            a {
+                font-size: 1.25rem;
+                transition: 0.5s;
+
+                &:hover {
+                    color: #b6b6b6;
+                }
+            }
+
+            .navbar-buttonClose {
+                position: absolute;
+                top: 2rem;
+                right: 3.7rem;
+            }
+
+            .navbar-button {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        .responsive-navbar {
+            transform: none;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0 50px;
+
+        nav {
+            .navbar-buttonClose {
+                position: absolute;
+                top: 2rem;
+                right: 2.3rem;
+            }
+        }
+
+    }
+}

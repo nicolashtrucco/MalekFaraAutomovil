@@ -1,0 +1,136 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.inicio-container {
+   padding: 120px 300px 25px 300px;
+   height: 100%;
+   background: rgb(164, 164, 164);
+   background: linear-gradient(
+      0deg,
+      rgba(164, 164, 164, 1) 0%,
+      rgba(0, 0, 0, 1) 100%
+   );
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   .inicio-parrrafoSlogan {
+      width: 750px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0 30px 0;
+
+      p {
+         font-family: "PT Serif", serif;
+         color: #fff;
+         text-align: center;
+      }
+      .inicio-slogan {
+         font-size: 1.7rem;
+         font-weight: bold;
+         margin-bottom: 5px;
+      }
+
+      .inicio-autor {
+         font-size: 1.2rem;
+         color: rgb(226, 226, 226);
+      }
+   }
+
+   .inicio-ImgSlogan {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+         width: 850px;
+         height: auto;
+      }
+   }
+
+   .inicio-buttonContainer {
+      margin: 50px 0 20px 0;
+
+      a {
+         padding: 0.75rem 2rem;
+         //   width:275px;
+         //   height: 45px;
+         border-radius: 3px;
+         color: #fff;
+         font-weight: bold;
+         font-size: 0.9rem;
+         background-color: #00000073;
+         transition: 0.75s;
+         text-decoration: none;
+
+         &:hover {
+            background-color: #000000;
+         }
+      }
+   }
+}
+
+@media (max-width: 1024px) {
+   .inicio-container {
+      padding: 120px 25px 25px 25px;
+      .inicio-parrrafoSlogan {
+         width: 500px;
+
+         .inicio-slogan {
+            font-size: 1.4rem;
+            font-weight: bold;
+         }
+      }
+
+      .inicio-ImgSlogan {
+         img {
+            width: 550px;
+         }
+      }
+   }
+}
+
+@media (max-width: 480px) {
+   .inicio-container {
+      padding: 120px 25px 25px 25px;
+      .inicio-parrrafoSlogan {
+         width: 250px;
+
+         p {
+            text-align: center;
+
+            .inicio-slogan {
+               font-size: 1rem;
+               font-weight: bold;
+               background-color: red;
+            }
+         }
+      }
+
+      .inicio-ImgSlogan {
+         img {
+            width: 300px;
+         }
+      }
+      .inicio-buttonContainer {
+         margin: 50px 0 20px 0;
+
+         a {
+            padding: 0.75rem 1.5rem;
+
+            border-radius: 3px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.7rem;
+            background-color: #00000073;
+            transition: 0.75s;
+
+            &:hover {
+               background-color: #000000;
+            }
+         }
+      }
+   }
+}

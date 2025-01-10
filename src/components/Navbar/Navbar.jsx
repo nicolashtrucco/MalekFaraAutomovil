@@ -1,7 +1,7 @@
 import '../Navbar/navbar.scss'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { useRef } from 'react'
-import logo from '../../assets/MÁLEK-FARA-LogoBlanco.png'
+import logo from '../../assets/MÁLEK-FARA-LogoBlanco.webp'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {

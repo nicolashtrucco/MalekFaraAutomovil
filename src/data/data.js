@@ -49,9 +49,9 @@ const products = [
 const getProducts = () => {
     return new Promise((res, rej) => {
         //* Simular Retraso de Red
-        setTimeout(()=>{
+        // setTimeout(()=>{
             res(products)
-        },1000)
+        // },1000)
     })
 }
 

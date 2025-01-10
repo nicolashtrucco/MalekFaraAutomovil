@@ -1,0 +1,231 @@
+.footer-container {
+    padding: 25px 300px;
+    background-color: #000;
+    border-top: solid 1px #919191b9;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .footer-logo {
+        img {
+
+            width: 350px;
+            height: auto;
+        }
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2.5rem;
+        flex-wrap: wrap;
+
+        .footer-icons {
+            display: flex;
+            align-items: center;
+
+            .footer-location {
+                .footer-p01 {
+                    font-weight: bold;
+                }
+            }
+
+            p {
+                color: #FFF;
+                font-size: 0.75rem;
+            }
+
+            .footer-icon {
+                color: #FFF;
+                font-size: 2rem;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+.footer-creditosContainer {
+    padding: 10px 300px;
+    background-color: #2b2b2b;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    P {
+        font-size: 0.9rem;
+        color: #ffffff36;
+        text-align: center;
+
+        span {
+            color: #ffffffb0;
+        }
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            color: #ffffffb0;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+
+    .footer-container {
+        padding: 25px 100px;
+        justify-content: center;
+        flex-direction: column;
+        
+
+        .footer-logo {
+            img {
+    
+                width: 250px;
+                height: auto;
+            }
+        }
+
+        .footer-contact {
+            gap: 1rem;
+
+            .footer-icons {
+                display: flex;
+                align-items: center;
+    
+                .footer-location {
+                    .footer-p01 {
+                        font-weight: bold;
+                    }
+                }
+    
+                p {
+                    color: #FFF;
+                    font-size: 0.8rem;
+                }
+    
+                .footer-icon {
+                    color: #FFF;
+                    font-size: 1.5rem;
+                    margin-right: 15px;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-container {
+        padding: 25px 50px;
+        justify-content: center;
+        flex-direction: column;
+        
+
+        .footer-logo {
+            img {
+    
+                width: 250px;
+                height: auto;
+            }
+        }
+
+        .footer-contact {
+            gap: 1rem;
+
+            .footer-icons {
+                display: flex;
+                align-items: center;
+    
+                .footer-location {
+                    .footer-p01 {
+                        font-weight: bold;
+                    }
+                }
+    
+                p {
+                    color: #FFF;
+                    font-size: 0.6rem;
+                    
+                }
+    
+                .footer-icon {
+                    color: #FFF;
+                    font-size: 1.5rem;
+                    margin-right: 15px;
+                }
+            }
+        }
+
+    }
+
+    .footer-creditosContainer {
+        padding: 10px 50px;
+        flex-wrap: wrap;
+        P {
+            font-size: 0.8rem;
+            color: #ffffff36;
+        }
+    }
+
+
+
+}
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 25px 50px;
+        justify-content: center;
+        flex-direction: column;
+
+        .footer-logo {
+            img {
+    
+                width: 250px;
+                height: auto;
+            }
+        }
+
+        .footer-contact {
+            gap: 1rem;
+
+            .footer-icons {
+                display: flex;
+                align-items: center;
+    
+                .footer-location {
+                    .footer-p01 {
+                        font-weight: bold;
+                    }
+                }
+    
+                p {
+                    color: #FFF;
+                    font-size: 0.6rem;
+                }
+    
+                .footer-icon {
+                    color: #FFF;
+                    font-size: 1.5rem;
+                    margin-right: 15px;
+                }
+            }
+        }
+
+    }
+
+    .footer-creditosContainer {
+        padding: 10px 50px;
+        flex-direction: column;
+        P {
+            font-size: 0.8rem;
+            color: #ffffff36;
+            text-align: center;
+        }
+    }
+}

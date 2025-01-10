@@ -1,0 +1,79 @@
+.mainVehiculos-container {
+    padding: 50px 100px 25px 100px;
+    background-color: rgb(77, 77, 77);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .mainVehiculos-searchs {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+        align-items: center;
+        width: 400px;
+        padding: 0 15px;
+            height: 40px;
+            // margin-bottom: 50px;
+            border-left: none;
+            text-align: left;
+        
+            font-family: Arial, sans-serif;
+                
+                font-size: 1rem;
+                outline: none;
+                background-color: #ffffffc9;
+                border-radius: 3px;
+        
+        .mainVehiculos-search {
+            height: 40px;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+             svg {
+                font-size: 1.1rem;
+             }
+        }
+
+        input {
+            width: 400px;
+        padding: 0 10px;
+            height: 40px;
+            // margin-bottom: 50px;
+            border-left: none;
+            text-align: left;
+            border: none;
+            font-family: Arial, sans-serif;
+                font-size: 1rem;
+                outline: none;
+                background-color: transparent;
+        }
+    }
+    
+}
+
+@media (max-width:1024px) {
+    .mainVehiculos-container {
+    
+        .mainVehiculos-searchs {
+            width: 350px;
+
+            .mainVehiculos-search {
+            }
+        }
+    } 
+}
+
+@media (max-width:480px) {
+    .mainVehiculos-container {
+    
+        .mainVehiculos-searchs {
+            width: 300px;
+
+            .mainVehiculos-search {
+            }
+        }
+    } 
+}

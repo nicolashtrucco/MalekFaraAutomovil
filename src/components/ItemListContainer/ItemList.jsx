@@ -16,7 +16,7 @@ const ItemList = ({products}) => {
             ))
         }
     </div>
-        <Link  className="itemList-a" to={'/Vehiculos'}>Ver Más</Link>
+        
     </div>
   )
 }

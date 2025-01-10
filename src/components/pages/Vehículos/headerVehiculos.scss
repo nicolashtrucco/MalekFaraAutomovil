@@ -1,0 +1,53 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.headerVehiculos-container {
+   padding: 120px 300px 25px 300px;
+   height: 100%;
+   background: rgb(0, 0, 0);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   .headerVehiculo-ImgParrafo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 175px;
+      padding: 50px 0;
+
+      p {
+         color: #ffffffc4;
+         font-size: 2rem;
+         font-family: "PT Serif", serif;
+      }
+
+      img {
+         width: 600px;
+      }
+   }
+}
+
+@media (max-width: 1024px) {
+   .headerVehiculos-container {
+      padding: 120px 200px 25px 200px;
+
+      .headerVehiculo-ImgParrafo {
+         img {
+            width: 450px;
+         }
+      }
+   }
+}
+
+@media (max-width: 480px) {
+   .headerVehiculos-container {
+      .headerVehiculo-ImgParrafo {
+         img {
+            width: 400px;
+         }
+      }
+   }
+}

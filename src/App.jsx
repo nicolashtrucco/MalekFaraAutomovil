@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer'
 import Vehiculos from './components/pages/Vehículos/Vehiculos'
 import Contacto from './components/pages/Contacto/Contacto'
 import ScrollToTop from './components/scrollTop/scrollTop'
+import Servicios from './components/pages/Servicios/Servicios'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/' element={<Inicio/>}/>
         <Route path='/Vehiculos' element={<Vehiculos/>}/>
         <Route path='/Contacto' element={<Contacto/>} />
+        <Route path='/Servicios' element={<Servicios/>} />
       </Routes>
 
       <Footer/>

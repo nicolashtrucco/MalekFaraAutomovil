@@ -35,6 +35,10 @@ header {
                 color: #b6b6b6;
             }
         }
+
+        a.active {
+            border-bottom: solid 0.5px #fff;
+        }
     }
 
     .navbar-button {

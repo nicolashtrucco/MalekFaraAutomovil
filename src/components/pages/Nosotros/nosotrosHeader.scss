@@ -1,0 +1,19 @@
+.contactoHeader-container {
+.nosotrosHeader {
+
+    .nosotros-img {
+        width: 650px;
+    }
+}
+}
+
+@media(max-width: 480px) {
+    .contactoHeader-container {
+        .nosotrosHeader {
+        
+            .nosotros-img {
+                width: 450px;
+            }
+        }
+        }
+}

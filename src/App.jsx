@@ -7,6 +7,7 @@ import Vehiculos from './components/pages/Vehículos/Vehiculos'
 import Contacto from './components/pages/Contacto/Contacto'
 import ScrollToTop from './components/scrollTop/scrollTop'
 import Servicios from './components/pages/Servicios/Servicios'
+import Nosotros from './components/pages/Nosotros/Nosotros'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/Vehiculos' element={<Vehiculos/>}/>
         <Route path='/Contacto' element={<Contacto/>} />
         <Route path='/Servicios' element={<Servicios/>} />
+        <Route path='/Nosotros' element={<Nosotros/>} />
       </Routes>
 
       <Footer/>

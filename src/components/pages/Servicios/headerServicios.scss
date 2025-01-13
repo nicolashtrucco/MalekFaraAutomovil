@@ -3,6 +3,19 @@
     .servicio-header {
         img {
             width: 550px;
+            padding: 0 25px 0 0 ;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .servicio-container {
+        padding-bottom: 40px;
+        .servicio-header {
+            img {
+                width: 450px;
+                
+            }
         }
     }
 }

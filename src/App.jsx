@@ -8,6 +8,7 @@ import Contacto from './components/pages/Contacto/Contacto'
 import ScrollToTop from './components/scrollTop/scrollTop'
 import Servicios from './components/pages/Servicios/Servicios'
 import Nosotros from './components/pages/Nosotros/Nosotros'
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 
 function App() {
 
@@ -23,7 +24,10 @@ function App() {
         <Route path='/Contacto' element={<Contacto/>} />
         <Route path='/Servicios' element={<Servicios/>} />
         <Route path='/Nosotros' element={<Nosotros/>} />
+        <Route path='Vehiculos/:idVehiculos' element={<ItemDetailContainer/>}/>
       </Routes>
+
+      
 
       <Footer/>
 

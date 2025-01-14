@@ -27,7 +27,9 @@ const ItemListContainer = ({ limit, search }) => {
   useEffect(() => {
     if (search) {
       const filtered = products.filter((product) =>
-        product.name.toLowerCase().includes(search.toLowerCase())
+        product.name.toLowerCase().includes(search.toLowerCase()) ||
+        product.carroceria.toLowerCase().includes(search.toLowerCase()) ||
+        product.category.toLowerCase().includes(search.toLowerCase())
       );
       setFilteredProducts(filtered);
     } else {

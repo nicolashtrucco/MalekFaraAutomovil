@@ -2,18 +2,43 @@
     padding-bottom: 40px;
     .servicio-header {
         img {
+            overflow-y: hidden;
             width: 550px;
             padding: 0 25px 0 0 ;
         }
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
     .servicio-container {
+
         padding-bottom: 40px;
         .servicio-header {
+            background-color: red;
+            padding: 0;
+            margin: 0;
             img {
-                width: 450px;
+                width: 400px;
+                overflow-y: hidden;
+                padding: 0;
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .servicio-container {
+
+        padding-bottom: 40px;
+        .servicio-header {
+            background-color: red;
+            padding: 0;
+            margin: 0;
+            img {
+                width: 250px;
+                overflow-y: hidden;
+                padding: 0;
                 
             }
         }

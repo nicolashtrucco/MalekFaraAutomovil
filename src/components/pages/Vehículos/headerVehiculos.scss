@@ -25,14 +25,18 @@
       }
 
       img {
-         width: 600px;
+         width: 100%; /* Adapta la imagen al ancho del contenedor */
+         max-width: 600px; /* Evita que supere el tamaño original si el contenedor es más grande */
+         height: auto; /* Mantiene las proporciones de la imagen */
+         display: block; /* Asegura que la imagen no cree espacios inesperados */
+         margin: 0 auto; /* Centra la imagen horizontalmente */
       }
    }
 }
 
 @media (max-width: 1024px) {
    .headerVehiculos-container {
-      padding: 120px 200px 25px 200px;
+      padding: 120px 100px 25px 100px;
 
       .headerVehiculo-ImgParrafo {
          img {
@@ -44,9 +48,15 @@
 
 @media (max-width: 480px) {
    .headerVehiculos-container {
+      padding: 120px 50px 25px 50px;
       .headerVehiculo-ImgParrafo {
+         // padding: 0;
          img {
-            width: 400px;
+            width: 100%; /* Adapta la imagen al ancho del contenedor */
+            max-width: 450px; /* Evita que supere el tamaño original si el contenedor es más grande */
+            height: auto; /* Mantiene las proporciones de la imagen */
+            display: block; /* Asegura que la imagen no cree espacios inesperados */
+            margin: 0 auto; /* Centra la imagen horizontalmente */
          }
       }
    }

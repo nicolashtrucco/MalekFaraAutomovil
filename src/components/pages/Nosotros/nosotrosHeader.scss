@@ -7,6 +7,18 @@
 }
 }
 
+@media(max-width: 1024px) {
+    .contactoHeader-container {
+        .nosotrosHeader {
+        
+            .nosotros-img {
+                overflow-y: hidden;
+                width: 450px;
+            }
+        }
+        }
+}
+
 @media(max-width: 480px) {
     .contactoHeader-container {
         .nosotrosHeader {

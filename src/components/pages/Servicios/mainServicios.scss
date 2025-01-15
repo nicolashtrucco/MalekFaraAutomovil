@@ -119,14 +119,15 @@
    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 570px) {
     .main-ServiciosContainer {
        .servicios {
           .servicios-container {
              .servicio-container {
-                 img {
-                     width: 355px;
-                  height: 175px;
+                img {
+                   width: 355px;
+                   height: 175px;
+                   overflow-y: hidden;
                   }
             
                   h1 {

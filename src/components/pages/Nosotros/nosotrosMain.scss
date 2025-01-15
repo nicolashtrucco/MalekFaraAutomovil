@@ -101,7 +101,7 @@
                 height: 500px; // Asegura que abarque todo el contenedor padre.
             
                 img {
-                    width: 100%; // Abarca todo el ancho disponible.
+                    width: 500px; // Abarca todo el ancho disponible.
                     height: 100%; // Abarca todo el alto disponible.
                     border-radius: 5px 0 0 5px;
                     object-fit: cover; // Mantiene la proporción de la imagen mientras cubre todo el espacio.
@@ -163,7 +163,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
 
     .nosotros-container {
         padding: 50px 200px 50px 200px;

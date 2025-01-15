@@ -13,7 +13,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 function App() {
 
   return (
-    <div>
+    <div className='app-container'>
       <BrowserRouter >
       <ScrollToTop /> {/* Desplaza hacia arriba al cambiar de ruta */}
       <Navbar/>
